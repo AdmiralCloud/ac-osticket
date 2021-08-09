@@ -82,6 +82,50 @@ let response = await ost.createTicket(ticket, options)
 
 ```
 
+## Attaching files to a New Ticket
+You can attach file to the OSTicket API. Adding text file is as simple as that.
+
+```
+const ticket = {
+    name: 'Jane Doe',
+    email: 'jane.doe@admiralcloud.com',
+    subject: 'I need help',
+    message: 'This is my bug report',
+    attachments: [
+        { 'filename.txt': 'contents of the file' },
+    ]
+}
+
+const options = {
+    fieldsToCheck: [
+        { field: 'attachments', type: 'array', required: true },
+    ]
+}
+let response = await ost.createTicket(ticket, options)
+```
+
+If you want to attach binary file (e.g. archive) - it needs a bit more processing
+```
+const readFileSync = require('fs').readFileSync
+const fileContentsBuffer = Buffer.from(readFileSync('file.zip'))
+const ticket = {
+    name: 'Jane Doe',
+    email: 'jane.doe@admiralcloud.com',
+    subject: 'I need help',
+    message: 'This is my bug report',
+    attachments: [
+        { 'filename.zip': `data:application/zip;base64,${fileContentsBuffer.toString('base64')}` },
+    ]
+}
+
+const options = {
+    fieldsToCheck: [
+        { field: 'attachments', type: 'array', required: true },
+    ]
+}
+let response = await ost.createTicket(ticket, options)
+```
+Crucial part is defining type of data correctly.
 
 ## Test mode
 You can enable test mode, which will not create real tickets but instead return a random ID and debugMode true in the response
