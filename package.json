@@ -3,20 +3,20 @@
   "version": "2.0.4",
   "description": "OSTicket API Wrapper",
   "repository": "https://github.com/mmpro/ac-osticket",
-  "main": "index.js",
-  "author": "Mark Poepping <mark.poepping@mmpro.de",
+  "main": "class.js",
+  "author": "Mark Poepping <mark.poepping@admiralcloud.com",
   "license": "MIT",
   "dependencies": {
     "ac-keylock": "^0.0.3",
-    "ac-sanitizer": "^3.7.2",
+    "ac-sanitizer": "^3.9.5",
     "axios": "^0.21.1",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "ac-semantic-release": "^0.2.5",
+    "ac-semantic-release": "^0.2.6",
     "chai": "^4.3.4",
-    "eslint": "7.25.0",
-    "mocha": "^8.3.2",
+    "eslint": "7.32.0",
+    "mocha": "^9.1.1",
     "nyc": "^15.1.0"
   },
   "scripts": {
