@@ -1,3 +1,18 @@
+<a name="3.0.0"></a>
+ 
+# [3.0.0](https://github.com/mmpro/ac-osticket/compare/v2.0.4..v3.0.0) (2021-08-28 19:15:53)
+
+
+### Feature
+
+* **App:** OSTicket is now a class | MP | [917f180024970da39f7e51780ee606e9010e7d6e](https://github.com/mmpro/ac-osticket/commit/917f180024970da39f7e51780ee606e9010e7d6e)    
+OSTicket is now a class - see README
+### Chores
+
+* **App:** Updated packages | MP | [d82f03620fd83a83e6c8e1d5b4b3c75eadd49a8f](https://github.com/mmpro/ac-osticket/commit/d82f03620fd83a83e6c8e1d5b4b3c75eadd49a8f)    
+Updated packages
+## BREAKING CHANGES
+* **App:** OSTicket is now a class
 <a name="2.0.4"></a>
 
 ## [2.0.4](https://github.com/mmpro/ac-osticket/compare/v2.0.3..v2.0.4) (2021-05-01 13:39:21)
