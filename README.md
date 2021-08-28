@@ -2,9 +2,9 @@
 
 Wrapper for OSTicket. At the moment you can only create tickets.
 
-***ATTENTION/BREAKING CHANGES in version 2***
-+ no supports for callbacks. Please use async/await
-+ response is an object (for more flexibility) with property ticketId instead of a plain string
+***ATTENTION/BREAKING CHANGES in version 3***
++ OSTicket is now a class
++ use baseURL (like axios) instead of baseUrl
 
 # Installation
 ```
@@ -17,11 +17,16 @@ Create API Key in OSTicket and instanciate OSTicket with your OSTicket URL and t
 
 ## Init
 ```
-const ost = require('osticket')
-ost.init({
-  baseUrl: 'https://myOSTicketURL',
+const { OSTicket } = require('osticket')
+const ost = new OSTicket({
+  baseURL: 'https://myOSTicketURL',
   apiKey: 'abc-123', 
   apiSecret: 'abc-secret' // optional if you have tweaked OSTicket
+})
+
+// if you want to init redis keylock system
+ost.init({
+    keylock: ... // see ac-keylock
 })
 
 // see below for payload
@@ -96,14 +101,20 @@ You can enable test mode, which will not create real tickets but instead return 
 Enable testmode globally by using init parameter "debugmode" to true or use it on per-function basis and create a ticket with option debug = true.
 
 ```
-ost.init({
-  baseUrl: 'https://myOSTicketURL',
+// while creating new instance
+const ost = new OSTicket({
+  baseURL: 'https://myOSTicketURL',
   apiKey: 'abc-123', 
   apiSecret: 'abc-secret' // optional if you have tweaked OSTicket,
   debugMode: true
 })
 
-// OR
+// OR any time later by calling init function
+ost.init({
+  debugMode: true
+})
+
+// OR on per-ticket basis
 const ticket = {
     "name": "Jane Doe",
     "email": "jane.doe@admiralcloud.com",

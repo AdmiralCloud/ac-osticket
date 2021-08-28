@@ -34,12 +34,16 @@ server.listen(8070)
  */
 
 const expect = require('chai').expect
-const ost = require('./index')
-ost.init({
-  baseUrl: 'http://localhost:8070/',
+const { OSTicket } = require('./class')
+
+const apiBaseParams = {
+  baseURL: 'http://localhost:8070/',
   apiKey: 'abc-123', 
   apiSecret: 'abc-secret' 
-})
+}
+
+const ost = new OSTicket(apiBaseParams)
+ost.init()
 
 
 describe('Run test', function() {
@@ -177,8 +181,8 @@ describe('Run test', function() {
   })
 
   it('Try to create a ticket at a non-existing server - should fail', async() => {
-    ost.init({
-      baseUrl: 'http://localhost:8071/',
+    const fail = new OSTicket({
+      baseURL: 'http://localhost:8071/',
       apiKey: 'abc-123',
       debugMode: false
     })
@@ -189,7 +193,7 @@ describe('Run test', function() {
       subject: 'I need help',
       message: 'This is my bug report'
     }
-    let response = await ost.createTicket(ticket)
+    let response = await fail.createTicket(ticket)
     expect(response).to.be.have.property('code', 'ECONNREFUSED')
   })
 
