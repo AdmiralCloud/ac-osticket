@@ -1,3 +1,23 @@
+<a name="3.0.1"></a>
+
+## [3.0.1](https://github.com/mmpro/ac-osticket/compare/v3.0.0..v3.0.1) (2021-09-19 17:05:13)
+
+
+### Bug Fix
+
+* **App:** Package update | MP | [34c7c9aab5ecdae4395db4021871109eb6be68ef](https://github.com/mmpro/ac-osticket/commit/34c7c9aab5ecdae4395db4021871109eb6be68ef)    
+Package update
+### Documentation
+
+* **App:** Add explanation how to add attachment to OSTicket API | VD | [b24be011ad6049702370c6047f4474e272af816f](https://github.com/mmpro/ac-osticket/commit/b24be011ad6049702370c6047f4474e272af816f)    
+Merge: 4485439 46478e8  
+Merge branch 'master' of github.com:mmpro/ac-osticket  
+* 'master' of github.com:mmpro/ac-osticket:
+* **App:** Add explanation how to add attachment to OSTicket API | VD | [46478e872560026e3d2e6a3af8be05899f7f8e65](https://github.com/mmpro/ac-osticket/commit/46478e872560026e3d2e6a3af8be05899f7f8e65)    
+Merge: c97f7b2 a064559  
+Merge pull request #5 from mmpro/develop_virgis
+* **App:** Add explanation how to add attachment to OSTicket API | VD | [a06455994cc7cf7f7f8738d998ce928c38e1bffd](https://github.com/mmpro/ac-osticket/commit/a06455994cc7cf7f7f8738d998ce928c38e1bffd)    
+Add explanation how to add attachment to OSTicket API
 <a name="3.0.0"></a>
  
 # [3.0.0](https://github.com/mmpro/ac-osticket/compare/v2.0.4..v3.0.0) (2021-08-28 19:15:53)
