@@ -2,7 +2,7 @@
   "name": "ac-osticket",
   "version": "3.0.1",
   "description": "OSTicket API Wrapper",
-  "repository": "https://github.com/mmpro/ac-osticket",
+  "repository": "https://github.com/admiralcloud/ac-osticket",
   "main": "class.js",
   "author": "Mark Poepping <mark.poepping@admiralcloud.com",
   "license": "MIT",
