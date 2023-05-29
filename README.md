@@ -17,7 +17,7 @@ Create API Key in OSTicket and instanciate OSTicket with your OSTicket URL and t
 
 ## Init
 ```
-const { OSTicket } = require('osticket')
+const { OSTicket } = require('ac-osticket')
 const ost = new OSTicket({
   baseURL: 'https://myOSTicketURL',
   apiKey: 'abc-123', 
