@@ -69,12 +69,15 @@ let response = await ost.createTicket(ticket, options)
 ## Custom fields
 You can also send custom fields to the OSTicket API. Make sure to add definitions (based on ac-sanitizer).
 
+NOTE: If you want to add custom fields, you have to define Topics in OSTicket and send the topicId (id from URL).
+
 ```
 const ticket = {
     name: 'Jane Doe',
     email: 'jane.doe@admiralcloud.com',
     subject: 'I need help',
     message: 'This is my bug report',
+    topicId: 123,
     jobNumber: 'ABC-JobId-123'
 }
 

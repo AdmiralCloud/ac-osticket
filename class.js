@@ -65,6 +65,7 @@ class OSTicket {
       { field: 'name', type: 'string', required: true },
       { field: 'subject', type: 'string', required: true },
       { field: 'message', type: 'string', required: true },
+      { field: 'topicId', type: 'integer' },
       { field: 'payloadCheck', type: 'boolean' },
     ]
     if (_.size(_.get(options, 'fieldsToCheck'))) {
