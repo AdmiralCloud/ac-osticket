@@ -26,7 +26,8 @@ const osTicket = () => {
 
     if (_.get(apiBaseParams, 'debugMode') || _.get(params, 'debug')) {
       const ticketId = Math.floor(Math.random() * 100000)
-      return { ticketId, debugMode: true }
+      const payload =  _.pick(apiParams, ['method', 'baseURL', 'url', 'data'])
+      return { ticketId, payload, debugMode: true }
     }
 
     try {
