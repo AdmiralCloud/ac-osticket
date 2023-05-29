@@ -1,3 +1,18 @@
+<a name="3.0.3"></a>
+
+## [3.0.3](https://github.com/mmpro/ac-osticket/compare/v3.0.2..v3.0.3) (2023-05-29 11:09:27)
+
+
+### Bug Fix
+
+* **App:** Improved debugging | MP | [39726fec6823ff5d12f9f9e471f668ed6e29b6cc](https://github.com/mmpro/ac-osticket/commit/39726fec6823ff5d12f9f9e471f668ed6e29b6cc)    
+Improved debugging  
+Related issues: [/issues#undefined](https://github.com//issues/undefined)
+### Chores
+
+* **App:** Updated packages | MP | [84ace3ba49e09bb49244a0f30df1626b757d0020](https://github.com/mmpro/ac-osticket/commit/84ace3ba49e09bb49244a0f30df1626b757d0020)    
+Updated packages  
+Related issues: [/issues#undefined](https://github.com//issues/undefined)
 <a name="3.0.2"></a>
 
 ## [3.0.2](https://github.com/mmpro/ac-osticket/compare/v3.0.1..v3.0.2) (2021-10-09 10:21:45)
