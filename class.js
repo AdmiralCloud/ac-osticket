@@ -1,7 +1,7 @@
 const _ = require('lodash')
 const axios = require('axios')
 
-const keylock = require('ac-keylock')
+const ackeylock = require('ac-keylock')
 const sanitizer = require('ac-sanitizer')
 
 class OSTicket {
@@ -19,23 +19,23 @@ class OSTicket {
     }
   }
 
-  init = async function(params) {
-    if (_.has(params, 'debugMode')) {
-      this.debugMode = _.get(params, 'debugMode')
+  async init({ keylock, debugMode } =  {}) {
+    if (!_.isNil(debugMode)) {
+      this.debugMode = debugMode
     }
-    await keylock.init(_.get(params, 'keylock'))
+    await ackeylock.init(keylock)
   }
 
-  apiCall = async function(params) {
+  async apiCall({ method = 'post', url = '/api/tickets.json', headers, data, debug }) {
     let apiParams = {
-      method: _.get(params, 'method', 'post'),
+      method,
       baseURL: this.baseURL,
-      url: _.get(params, 'url', '/api/tickets.json'),
-      headers: _.get(params, 'headers') || this.headers,
-      data: _.get(params, 'data')
+      url,
+      headers: headers || this.headers,
+      data
     }
 
-    if (this.debugMode || _.get(params, 'debug')) {
+    if (this.debugMode || debug) {
       const ticketId = Math.floor(Math.random() * 100000)
       const payload =  _.pick(apiParams, ['method', 'baseURL', 'url', 'data'])
       return { ticketId, payload, debugMode: true }
@@ -59,7 +59,7 @@ class OSTicket {
     }
   }
 
-  createTicket = async function(data, options) {
+  async createTicket(data, options) {
     let fields = [
       { field: 'email', type: 'email', required: true },
       { field: 'name', type: 'string', required: true },
@@ -93,7 +93,7 @@ class OSTicket {
         value: _.get(options, 'value'),
         expires: _.get(options, 'expires')
       }
-      let lock = await keylock.lockKey(lockParams)
+      let lock = await ackeylock.lockKey(lockParams)
       if (_.has(lock, 'status')) return { status: _.get(lock, 'status') }
       return await this.apiCall(apiParams)
     }

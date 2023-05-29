@@ -43,8 +43,12 @@ const apiBaseParams = {
 }
 
 const ost = new OSTicket(apiBaseParams)
-ost.init()
 
+describe('Prepare test', function() {
+  it('Set init option', async() => {
+    await ost.init()
+  })
+})
 
 describe('Run test', function() {
   this.timeout(15000)

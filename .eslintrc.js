@@ -21,7 +21,9 @@ let config = {
   globals: {
     config: true,
     acapi: true,
-    expect: true
+    expect: true,
+    describe: true,
+    it: true
   }
 }
 module.exports = config
