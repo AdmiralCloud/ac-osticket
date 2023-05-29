@@ -1,3 +1,23 @@
+<a name="3.0.5"></a>
+
+## [3.0.5](https://github.com/mmpro/ac-osticket/compare/v3.0.4..v3.0.5) (2023-05-29 11:59:38)
+
+
+### Bug Fix
+
+* **App:** Improved function declaration | MP | [8be5939382eb24a04d092caea21d0f2ae063ed6a](https://github.com/mmpro/ac-osticket/commit/8be5939382eb24a04d092caea21d0f2ae063ed6a)    
+Improved function declaration  
+Related issues: [/issues#undefined](https://github.com//issues/undefined)
+### Tests
+
+* **App:** Fixed test | MP | [af263449868ca48ca26b32bc4cf5f56f5f0ff31c](https://github.com/mmpro/ac-osticket/commit/af263449868ca48ca26b32bc4cf5f56f5f0ff31c)    
+Use await to init ost  
+Related issues: [/issues#undefined](https://github.com//issues/undefined)
+### Chores
+
+* **App:** Updated eslintrc | MP | [89b346c31da4216e3edb9b681d0cce0c0e28ce6c](https://github.com/mmpro/ac-osticket/commit/89b346c31da4216e3edb9b681d0cce0c0e28ce6c)    
+Allow describe and it  
+Related issues: [/issues#undefined](https://github.com//issues/undefined)
 <a name="3.0.4"></a>
 
 ## [3.0.4](https://github.com/mmpro/ac-osticket/compare/v3.0.3..v3.0.4) (2023-05-29 11:33:00)
