@@ -1,3 +1,23 @@
+<a name="3.0.4"></a>
+
+## [3.0.4](https://github.com/mmpro/ac-osticket/compare/v3.0.3..v3.0.4) (2023-05-29 11:33:00)
+
+
+### Bug Fix
+
+* **App:** Improve debugging | MP | [2b015c3c61227798efd0abb767e6f83bddbbfe2c](https://github.com/mmpro/ac-osticket/commit/2b015c3c61227798efd0abb767e6f83bddbbfe2c)    
+If debug=true return payload sent to OSTicket  
+Related issues: [/issues#undefined](https://github.com//issues/undefined)
+### Documentation
+
+* **App:** Typo fix | MP | [7f3828a98088290da24466a5cb88e230c403b7a2](https://github.com/mmpro/ac-osticket/commit/7f3828a98088290da24466a5cb88e230c403b7a2)    
+Typo fix  
+Related issues: [/issues#undefined](https://github.com//issues/undefined)
+### Chores
+
+* **App:** Updated packages | MP | [ee0a55edee81cec58fdde7dae5be0bbfe0e8fad4](https://github.com/mmpro/ac-osticket/commit/ee0a55edee81cec58fdde7dae5be0bbfe0e8fad4)    
+Updated packages  
+Related issues: [undefined/undefined#master](undefined/browse/master)
 <a name="3.0.3"></a>
 
 ## [3.0.3](https://github.com/mmpro/ac-osticket/compare/v3.0.2..v3.0.3) (2023-05-29 11:09:27)
