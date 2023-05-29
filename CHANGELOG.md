@@ -1,3 +1,13 @@
+<a name="3.0.6"></a>
+
+## [3.0.6](https://github.com/mmpro/ac-osticket/compare/v3.0.5..v3.0.6) (2023-05-29 12:34:37)
+
+
+### Bug Fix
+
+* **App:** Allow topicId in payload | MP | [7587d7a36b59934e44cc032f7d440036cc2456b3](https://github.com/mmpro/ac-osticket/commit/7587d7a36b59934e44cc032f7d440036cc2456b3)    
+Allow topicId in payload  
+Related issues: [undefined/undefined#master](undefined/browse/master)
 <a name="3.0.5"></a>
 
 ## [3.0.5](https://github.com/mmpro/ac-osticket/compare/v3.0.4..v3.0.5) (2023-05-29 11:59:38)
