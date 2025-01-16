@@ -8,16 +8,16 @@
   "license": "MIT",
   "dependencies": {
     "ac-keylock": "^0.0.3",
-    "ac-sanitizer": "^4.0.15",
-    "axios": "^1.7.2",
+    "ac-sanitizer": "^4.0.16",
+    "axios": "^1.7.9",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "ac-semantic-release": "^0.4.2",
-    "chai": "^4.4.1",
-    "eslint": "9.6.0",
-    "mocha": "^10.6.0",
-    "nyc": "^17.0.0"
+    "ac-semantic-release": "^0.4.3",
+    "chai": "^4.5.0",
+    "eslint": "9.18.0",
+    "mocha": "^11.0.1",
+    "nyc": "^17.1.0"
   },
   "scripts": {
     "test": "nyc ./node_modules/.bin/mocha --bail --exit --slow 1000 ./test.js || :"
