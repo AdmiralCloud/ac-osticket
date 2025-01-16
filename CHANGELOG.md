@@ -1,3 +1,13 @@
+<a name="3.0.9"></a>
+
+## [3.0.9](https://github.com/mmpro/ac-osticket/compare/v3.0.8..v3.0.9) (2025-01-16 15:43:02)
+
+
+### Bug Fix
+
+* **App:** Package updates | MP | [f697bf16287abd27c2cdbe806046e78459782343](https://github.com/mmpro/ac-osticket/commit/f697bf16287abd27c2cdbe806046e78459782343)    
+Package updates  
+Related issues: [undefined/undefined#master](undefined/browse/master)
 <a name="3.0.8"></a>
 
 ## [3.0.8](https://github.com/mmpro/ac-osticket/compare/v3.0.7..v3.0.8) (2024-07-09 06:01:58)
