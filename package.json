@@ -8,18 +8,19 @@
   "license": "MIT",
   "dependencies": {
     "ac-keylock": "^0.0.3",
-    "ac-sanitizer": "^4.0.16",
-    "axios": "^1.7.9",
+    "ac-sanitizer": "^5.2.1",
+    "axios": "^1.13.0",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "ac-semantic-release": "^0.4.3",
+    "ac-semantic-release": "^0.4.8",
     "chai": "^4.5.0",
-    "eslint": "9.18.0",
-    "mocha": "^11.0.1",
+    "eslint": "9.38.0",
+    "mocha": "^11.7.4",
     "nyc": "^17.1.0"
   },
   "scripts": {
     "test": "nyc ./node_modules/.bin/mocha --bail --exit --slow 1000 ./test.js || :"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
