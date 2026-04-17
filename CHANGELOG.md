@@ -1,3 +1,11 @@
+## [3.0.11](https://github.com/mmpro/ac-osticket/compare/v3.0.10..v3.0.11) (2026-04-17 07:56:10)
+
+
+### Bug Fix
+
+
+* **App:** Package updates | MP | [424ca2a1865945431987703488f5155dae01b671](https://github.com/mmpro/ac-osticket/commit/424ca2a1865945431987703488f5155dae01b671)    
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
 
 ## [3.0.10](https://github.com/mmpro/ac-osticket/compare/v3.0.9..v3.0.10) (2025-10-27 19:12:59)
 
