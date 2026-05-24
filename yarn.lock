@@ -258,14 +258,14 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.15.tgz#596a1747233694d50f6ad8a7869fcb6f56cf5841"
   integrity sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==
 
-ac-countrylist@^1.0.19:
-  version "1.0.20"
-  resolved "https://registry.yarnpkg.com/ac-countrylist/-/ac-countrylist-1.0.20.tgz#71bf26419af07c6d3faac96fa3b6a7a986448b28"
-  integrity sha512-0hSijgc0SeAe+wM44uijlVD+5c9BP8pFKGE5FgQ9ywaXOlymFpf+I9TWvC5kkzc9YTJo3LnX1c0m9AWau8ar2g==
+ac-countrylist@^1.0.21:
+  version "1.0.21"
+  resolved "https://registry.yarnpkg.com/ac-countrylist/-/ac-countrylist-1.0.21.tgz#ec91d39ade2f88e807a3f98119c06fbc7ade2849"
+  integrity sha512-ifBcZ0Tia+DwkXSYPV6gfNjcnkeoyN0hqg7sXPMxfD3bFZyJgcRLHZsFmTO4JXy2UUtvnM1Y4ItyPejlwJl74g==
   dependencies:
     lodash "^4.18.1"
 
-ac-custom-error@^2.0.5:
+ac-custom-error@^2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/ac-custom-error/-/ac-custom-error-2.0.6.tgz#ca1625070d38f73fb6326aadd78fecdbbf872a7f"
   integrity sha512-3pRB67p3AtMa64uDkq5guBQr1rCbPrZDNu+RXU3mYJF6/F2/LSjbvHk5qqLZAwYF9q7PzXWqDLD6xrJUHo9BNA==
@@ -278,12 +278,12 @@ ac-file-extensions@^2.0.23:
     ac-semantic-release "^1.0.2"
     lodash "^4.18.1"
 
-ac-ip@^5.0.3:
-  version "5.0.4"
-  resolved "https://registry.yarnpkg.com/ac-ip/-/ac-ip-5.0.4.tgz#9506bfbeac12c64314132f5a2903fde0bf5dc604"
-  integrity sha512-vp4Mpnn07Ow6tjhmEpbLBQhXvzkqXyLPZ5EFvnDOrkLoPOL37GHsxN4kiCIAk0K9p56ovBBNbir5cHhkytm4Ag==
+ac-ip@^5.0.5:
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/ac-ip/-/ac-ip-5.0.5.tgz#00f77f5374c3730078c4f56ad3d8f13b11a65699"
+  integrity sha512-Xu9xopy716X6nEGrykKZL22yyGpT6J26Qs9wJ8E+WXHkJ6ABHMdeRY3/oJq0yHd50mMo2O0Wa8DRXBCVRy5XJg==
   dependencies:
-    ac-custom-error "^2.0.5"
+    ac-custom-error "^2.0.6"
     ip-address "^10.2.0"
     lodash "4.x"
 
@@ -296,14 +296,14 @@ ac-keylock@^0.0.3:
     node-cache "^5.1.2"
     uuid "^8.3.1"
 
-ac-sanitizer@^6.1.1:
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/ac-sanitizer/-/ac-sanitizer-6.1.1.tgz#a0b9b599d8102c36573d631ad54b4808a9feb782"
-  integrity sha512-YPiTzvi4NVPgzRJ2o23KnDLWn+S69Pn2TuE4a53DjBxipog2WWcbUaTdDp+gjeX8u3zKXScFEsDRYAEmxu/52w==
+ac-sanitizer@^6.1.2:
+  version "6.1.2"
+  resolved "https://registry.yarnpkg.com/ac-sanitizer/-/ac-sanitizer-6.1.2.tgz#1c7e3b6c2ae77ec6c5a65fc51f7a391bc42c093b"
+  integrity sha512-VgLC1555VvJvo9k3q76VjZtk7BPAzGyti+CGj0ZBcGfEyXnGkLbEEEaWGmYC9YwDyRJ+paYcfns2H0nZSwsrGw==
   dependencies:
-    ac-countrylist "^1.0.19"
+    ac-countrylist "^1.0.21"
     ac-file-extensions "^2.0.23"
-    ac-ip "^5.0.3"
+    ac-ip "^5.0.5"
     chai "^4.5.0"
     date-and-time "^4.5.0"
     hashids "^2.3.0"
@@ -1078,10 +1078,10 @@ minimatch@^9.0.4, minimatch@^9.0.5:
   resolved "https://registry.yarnpkg.com/minipass/-/minipass-7.1.3.tgz#79389b4eb1bb2d003a9bba87d492f2bd37bdc65b"
   integrity sha512-tEBHqDnIoM/1rXME1zgka9g6Q2lcoCkxHLuc7ODJ5BxbP5d4c2Z5cGgtXAku59200Cx7diuHTOYfSBD8n6mm8A==
 
-mocha@^11.7.5:
-  version "11.7.5"
-  resolved "https://registry.yarnpkg.com/mocha/-/mocha-11.7.5.tgz#58f5bbfa5e0211ce7e5ee6128107cefc2515a627"
-  integrity sha512-mTT6RgopEYABzXWFx+GcJ+ZQ32kp4fMf0xvpZIIfSq9Z8lC/++MtcCnQ9t5FP2veYEP95FIYSvW+U9fV4xrlig==
+mocha@^11.7.6:
+  version "11.7.6"
+  resolved "https://registry.yarnpkg.com/mocha/-/mocha-11.7.6.tgz#ebbe22989d04cbb9424a36307320476624c41a33"
+  integrity sha512-nS9xOGbw2I3cjCpxwZAEJ9xK9lmJ08vEkQvLtz4du9ZrF9UrjRpeJGiIgl2Z+Qs++pmB4ecDe48Fwsh+j+j7xA==
   dependencies:
     browser-stdout "^1.3.1"
     chokidar "^4.0.1"
